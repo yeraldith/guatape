@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatape</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="container-fluid m-0 p-0 bg-dark">
+        <!-- informacion -->
+        <section class="banner container-fluid m-0 p-0 ">
+            <div class="row header-informacion container-fluid m-0 p-0 ">
+                <div class="col-12 justify-content-md-end col-md-5 col-lg-7 d-flex justify-content-center">
+                    <img class="icons" src="images/mail.svg" alt="Correo">
+                    <a class="text-informacion" href="#">gary@toursguatape.com</a>
+                </div>
+                <div class="col-12 justify-content-md-end col-md-4 col-lg-3 d-flex justify-content-center">
+                    <img class="icons" src="images/whatsapp.svg" alt="whatsapp">
+                    <a class="text-informacion" href="#">(+57) 313 780 9338</a>
+                </div>
+                <div class="col-6 justify-content-end col-md-1 col-lg-1 d-md-flex">
+                    <img class="icons" src="images/facebook.svg" alt="Facebook">
+                    <img class="icons" src="images/instagram.svg" alt="Instagram">
+                    <img class="icons" src="images/twitter.svg" alt="Twitter">
+                </div>
+                <div class="col-6 justify-content-end col-md-1 col-lg-1 d-flex">
+                    <img class="icons" src="images/english.svg" alt="English">
+                </div>
+            </div>
+            <!-- barra de navegación-->
+            <div class="container-fluid m-0 p-0 ">
+                <img class="logo" src="images/Logo-tours-guatape.png" alt="Logo toursguatape">
+            </div>
+            <div class="row container-fluid m-0 p-0 ">
+                <div class="barra-nav">
+                    <nav class="col-12 navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarsExample09">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">TOURS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">NOTICIAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">PREGUNTAS FRECUENTES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">CONTÁCTANOS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <img class="texto-banner" src="images/descubre.svg" alt="Descubre">
+                <p class="texto-blanco">GUATAPE</p>
+            </div>
+            <!-- Sección reservas superior-->
+            <section class="reservas">
+                <form>
+                    <div class="row d-flex align-items-lg-center align-items-end">
+                        <div class="col-12 col-lg-10">
+                            <div class="row">
+                                <div class="col-6 col-lg-3">
+                                    <label class="ml-4" for="fecha">Fecha</label>
+                                    <input class="ml-4" type="date" id="fecha">
+                                </div>
+                                <div class="col-3">
+                                    <label for="lugarSalida">Lugar de salida</label>
+                                    <select id="lugarSalida">
+                                        <option>Plazoleta Nutivara</option>
+                                        <option>Parque del Poblado</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="idioma">Idioma del tour</label>
+                                    <select id="idioma">
+                                        <option>Español</option>
+                                        <option>Inglés</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="adultos">Adultos (6+)</label>
+                                    <select id="adultos">
+                                        <option>1 Adulto</option>
+                                        <option>2 Adultos</option>
+                                        <option>3 Adultos</option>
+                                        <option>4 Adultos</option>
+                                        <option>5 Adultos</option>
+                                        <option>6 Adultos</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="niños">Niños (4 a 6)</label>
+                                    <select id="niños">
+                                        <option>1 Niño</option>
+                                        <option>2 Niños</option>
+                                        <option>3 Niños</option>
+                                        <option>4 Niños</option>
+                                        <option>5 Niños</option>
+                                        <option>6 Niños</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <label class="text-condiciones">Valor adulto $ 94.000 COP - Valor niño $ 84.000 COP -
+                                    Niños de 0 a 3 van gratis y
+                                    cargados, no les incluye alimentación</label>
+                                <div class="d-flex ml-2">
+                                    <input class="mt-1 mr-1" type="checkbox">
+                                    <label class="text-condiciones">Acepto <span
+                                            class=" text-condiciones text-naranja">Terminos y Condiciones</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-12 ">
+                            <button class="btn-reservar">RESERVAR TOUR</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="reservas-responsive">
+                <form>
+                    <div class="row ">
+                        <div class="col-6 d-flex flex-column justify-content-center">
+                            <label class="ml-4" for="fecha">Fecha</label>
+                            <input class="ml-4" type="date" id="fecha">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-center">
+                            <label class="mr-4" for="lugarSalida">Lugar de salida</label>
+                            <select class="mr-4" id="lugarSalida">
+                                <option>Plazoleta Nutivara</option>
+                                <option>Parque del Poblado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column justify-content-center">
+                            <label class="ml-4" for="idioma">Idioma del tour</label>
+                            <select class="ml-4" id="idioma">
+                                <option>Español</option>
+                                <option>Inglés</option>
+                            </select>
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-center">
+                            <label class="mr-4" for="adultos">Adultos (6+)</label>
+                            <select class="mr-4" id="adultos">
+                                <option>1 Adulto</option>
+                                <option>2 Adultos</option>
+                                <option>3 Adultos</option>
+                                <option>4 Adultos</option>
+                                <option>5 Adultos</option>
+                                <option>6 Adultos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column justify-content-center">
+                            <label class="ml-4" for="niños">Niños (4 a 6)</label>
+                            <select class="ml-4" id="niños">
+                                <option>1 Niño</option>
+                                <option>2 Niños</option>
+                                <option>3 Niños</option>
+                                <option>4 Niños</option>
+                                <option>5 Niños</option>
+                                <option>6 Niños</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label class="text-condiciones">Valor adulto $ 94.000 COP - Valor niño $ 84.000 COP</label>
+                        <label class="text-condiciones"> -
+                            Niños de 0 a 3 van gratis y
+                            cargados, no les incluye alimentación</label>
+                        <div class="d-flex ml-2">
+                            <input class="mt-1 mr-1" type="checkbox">
+                            <label class="text-condiciones">Acepto <span class=" text-condiciones text-naranja">Terminos
+                                    y Condiciones</span></label>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button class="btn-reservar">RESERVAR TOUR</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <!-- Sección reservas-->
+        <section class="container">
+            <div class="row ">
+                <div class="col-12 col-md-7 col-lg-7">
+                    <div class="row">
+                        <img class="normas col-6 col-lg-3" src="images/tripadvisor-2020.png" alt="Tripadvisor-2020">
+                        <img class="normas col-6 col-lg-3" src="images/tripadvisor-2019.png" alt="Tripadvisor-2019">
+                        <img class="normas col-6 col-lg-3" src="images/tripadvisor-2018.png" alt="Tripadvisor-2018">
+                        <img class="normas col-6 col-lg-3" src="images/tripadvisor-2016.png" alt="Tripadvisor-2016">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6"></div>
+                        <img class="img-fluid" src="images/guatape-colonial.png" alt="Imagen Guatape">
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-5">
+                    <div class="card-tour">
+                        <h1 class="texto-planes">Nuestro tour incluye:</h1>
+                        <hr class="hr">
+                        <p class="circulo">
+                        <p class="texto-gris">Transporte en bus de turismo: sillas reclinables y aire acondicionado.</p>
+                        </p>
+                        <p class="texto-gris">Almuerzo típico Antioqueño.</p>
+                        <p class="texto-gris">Vista panorámica de Marinilla.</p>
+                        <p class="texto-gris">Panorámica del pueblo El Peñol.</p>
+                        <p class="texto-gris">Visita a la Piedra del Peñol. (no incluye el ascenso opcional $20.000)</p>
+                        <p class="texto-gris">Una hora y treinta minutos de estadía en este lugar.</p>
+                        <p class="texto-gris">Visita e historia de los sitios más relevantes de Guatape.</p>
+                        <p class="texto-gris">Una hora y treinta minutos de tiempo libre para disfrutar del destino
+                            Recorrido en pequeño
+                            bote de lujo por Guatape.</p>
+                        <p class="texto-gris">Guía profesional acompañante Asistencia Médica.</p>
+                        <p class="texto-gris">Traductor sin costo (Previa reserva)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="card-reserva img-fluid">
+                        <h1 class="text-reserva-one">Se agota rápido!!</h1>
+                        <h1 class="text-reserva-two">RESERVA AHORA!!</h1>
+                        <button class="btn-blanco">HAZ CLICK AQUI</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <img class="img-fluid" src="images/guatape-mirador.png" alt="Imagen Guatape">
+                </div>
+            </div>
+            <section class="reservas mb-5 mt-5">
+                <form>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label class="ml-4" for="fecha">Fecha</label>
+                                    <input class="ml-4" type="date" id="fecha">
+                                </div>
+                                <div class="col-3">
+                                    <label for="lugarSalida">Lugar de salida</label>
+                                    <select id="lugarSalida">
+                                        <option>Plazoleta Nutivara</option>
+                                        <option>Parque del Poblado</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="idioma">Idioma del tour</label>
+                                    <select id="idioma">
+                                        <option>Español</option>
+                                        <option>Inglés</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="adultos">Adultos (6+)</label>
+                                    <select id="adultos">
+                                        <option>1 Adulto</option>
+                                        <option>2 Adultos</option>
+                                        <option>3 Adultos</option>
+                                        <option>4 Adultos</option>
+                                        <option>5 Adultos</option>
+                                        <option>6 Adultos</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="niños">Niños (4 a 6)</label>
+                                    <select id="niños">
+                                        <option>1 Niño</option>
+                                        <option>2 Niños</option>
+                                        <option>3 Niños</option>
+                                        <option>4 Niños</option>
+                                        <option>5 Niños</option>
+                                        <option>6 Niños</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <label class="text-condiciones">Valor adulto $ 94.000 COP - Valor niño $ 84.000 COP -
+                                    Niños de 0 a 3 van gratis y
+                                    cargados, no les incluye alimentación</label>
+                                <div class="d-flex ml-2">
+                                    <input class="mt-1 mr-1" type="checkbox">
+                                    <label class="text-condiciones">Acepto <span
+                                            class=" text-condiciones text-naranja">Terminos y Condiciones</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2">
+                            <button class="btn-reservar">RESERVAR TOUR</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </section>
+        <!-- Sección elige tour-->
+        <section class="tour">
+            <div class="borde-naranja"></div>
+            <div class="fondo-amarillo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="texto-azul">Elige tu TOUR</p>
+                            <hr>
+                        </div>
+                        <div class="col-8">
+                            <img class="img-fluid" src="images/banner-figuras-superior.svg" alt="Figuras">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-planes img-fluid" src="images/full-day-guatape.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-planes img-fluid" src="images/discover-medellin.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-planes img-fluid" src="images/guatape-solidario.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <img class="img-fluid" src="images/banner-figuras.svg" alt="Figuras">
+            </div>
+            <div class="borde-naranja"></div>
+        </section>
+
+        <!-- Sección clientes-->
+        <section class="container mt-5 mb-5">
+            <div class="mt-5">
+                <p class="texto-azul">
+                    Nuestros clientes opinan
+                </p>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center col-md-2 col-lg-2">
+                    <img class="normas" src="images/tripadvisor-2020.png" alt="Normas">
+                </div>
+                <div
+                    class="col-12 col-md-8 col-lg-10 d-flex justify-content-center  justify-content-md-end justify-content-lg-end">
+                    <div class="card-clientes">
+                        <a><img src="images/flecha-anterior.svg" alt="Anteror"></a>
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <img src="images/flecha-siguiente.svg" alt="Siguiente"></a>
+                    </div>
+
+                </div>
+                <button class="btn-naranja">RESERVAR</button>
+
+        </section>
+        <!-- Sección guia-->
+        <section class="container-expand">
+            <div class="borde-azul"></div>
+            <div class="fondo-amarillo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="texto-azul">La guia del turista</p>
+                            <hr>
+                        </div>
+                        <div class="col-8">
+                            <img class="img-fluid" src="images/banner-figuras-superior.svg" alt="Figuras">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-lg-6">
+                            <img class="img-fluid" src="images/catedral-guatape.png" alt="Imagen guatape">
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <img class="img-fluid" src="images/piedra-guatape.png" alt="Imagen guatape">
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <img class="img-fluid" src="images/casa-guatape.png" alt="Imagen guatape">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+                            <img class="img-fluid" src="images/imagen-botero.png" alt="Imagen guatape">
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <img class="img-fluid" src="images/lago-guatape.png" alt="Imagen guatape">
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <img class="img-fluid" src="images/hotel-guatape.png" alt="Imagen guatape">
+                        </div>
+                    </div>
+                </div>
+
+                <img class="img-fluid" src="images/banner-figuras.svg" alt="Figuras">
+            </div>
+            <div class="borde-azul"></div>
+
+        </section>
+        <!-- Sección blog-->
+        <section class="blog container mt-5 mb-5">
+            <p class="texto-azul">Blog y Noticias</p>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img class="img-blog" src="images/guatape-turismo-uno.png" alt="Imagen Guatape">
+                    <div class="card-blog">
+                        <h1 class="texto-gris-uno">Regresa el turismo a Guatape.</h1>
+                        <p class="texto-gris-dos">Lorem ipsum dolor sit amet consectetur adipiscing elit integer,
+                            torquent parturient nisi erat sociis dictumst hendrerit quam, consequat sem proin ornare per
+                            aliquam inceptos…</p>
+                        <a class="texto-naranja">Leer más</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="img-blog" src="images/guatape-turismo-uno.png" alt="Imagen Guatape">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img class="img-blog" src="images/guatape-turismo-uno.png" alt="Imagen Guatape">
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="img-blog" src="images/guatape-turismo-uno.png" alt="Imagen Guatape">
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- Sección experiencia-->
+        <section class="container-expand">
+            <div class="borde-naranja"></div>
+            <div class="fondo-amarillo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5">
+                            <p class="texto-azul">Nuestras experiencias</p>
+                            <hr>
+                        </div>
+                        <div class="col-7">
+                            <img class="img-fluid" src="images/banner-figuras-superior.svg" alt="Figuras">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-planes img-fluid" src="images/full-day-guatape.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-planes img-fluid" src="images/discover-medellin.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-planes img-fluid" src="images/guatape-solidario.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-naranja">GALERÍA</button>
+                <img class="img-fluid" src="images/banner-figuras.svg" alt="Figuras">
+            </div>
+            <div class="borde-naranja"></div>
+        </section>
+        <!-- Sección sostenibilidad-->
+        <section class="sostenibilidad container mt-5 mb-5">
+            <p class="texto-azul">Sostenibilidad turística</p>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card-sostenibilidad">
+                        <p>Estamos comprometidos contigo, con el turismo y con el medio ambiente.</p>
+                        <p>Conoce todas nuestras políticas, códigos y compromisos.</p>
+                    </div>
+                    <button class="btn-naranja">VER MÁS</button>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <img class="img-fluid" src="images/sostenibilidad-guatape.png" alt="Imagenes guatape">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-footer">
+        <div class="row p-0 m-0 footer-row ">
+            <div class="col-6 col-lg-4 p-0 footer-uno">
+                <img class="logo-footer" src="images/Logo-tours-guatape.png" alt="Logo">
+            </div>
+            <div class="col-3  col-lg-2 p-0 footer-dos">
+                <div>
+                    <a class="nav-link text-white " href="#">TOURS</a>
+                    <a class="nav-link text-white" href="#">NOSOTROS</a>
+                    <a class="nav-link text-white" href="#">BLOG</a>
+                </div>
+            </div>
+            <div class="col-3 col-lg-3 p-0 footer-tres">
+                <div>
+                    <a class="nav-link text-white" href="#">NOTICIAS</a>
+                    <a class="nav-link text-white" href="#">PREGUNTAS FRECUENTES</a>
+                    <a class="nav-link text-white" href="#">CONTÁCTANOS</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-0 footer-cuatro">
+                <div class="col-12 col-lg-12 d-none d-lg-flex contenedor flex-column align-items-end">
+                    <div>
+                        <img class="icons-footer" src="images/facebook.svg" alt="Facebook">
+                        <img class="icons-footer" src="images/instagram.svg" alt="Instagram">
+                        <img class="icons-footer" src="images/whatsapp-blanco.svg" alt="Whatsapp">
+                        <img class="icons-footer" src="images/twitter.svg" alt="Twitter">
+                    </div>
+                    <div>
+                        <div class="mt-3">
+                            <img class="icons" src="images/whatsapp.svg" alt="whatsapp">
+                            <a class="text-informacion" href="#">(+57) 313 780 9338</a>
+                        </div>
+                        <div class="mt-2">
+                            <img class="icons" src="images/telefono.svg" alt="Telefono">
+                            <a class="text-informacion" href="#">(4) 604 5613</a>
+                        </div>
+                        <div class="mt-2">
+                            <img class="icons" src="images/mail.svg" alt="Correo">
+                            <a class="text-informacion" href="#">gary@toursguatape.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container-copyright">
+            <p class="text-footer">“Tours Guatapé rechaza la explotación, pornografía, turismo sexual y toda forma de
+                abuso sexual a menores de edad y contribuye al cumplimiento de la Ley 679 de 2001”</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
