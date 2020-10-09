@@ -1,5 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+:root{
+    --color-gris: #A0A0A0;
+    --color-gris-dos: #757575;
+    --color-amarillo: #FBE40F;
+    --color-naranja:  #FF9315;
+    --color-azul: #10596F;;
+}
 *{
     margin: 0;
     padding: 0;
@@ -50,11 +57,19 @@ body{
     margin-left: 300px;
 }
 .barra-nav{
-    height: 72px;
+    height: auto;
     width: 100%;
     position: fixed;
     top:26px;
     z-index: 3;
+    background: transparent linear-gradient(90deg, rgba(32, 129, 159, 0) 0%, rgba(32, 129, 159, 0.67) 30%, rgba(32, 129, 159, 1) 100%);
+}
+.text-color{
+    color: white !important ;
+}
+.nav-color{
+    height: auto;
+   z-index: 3;
     background: transparent linear-gradient(90deg, rgba(32, 129, 159, 0) 0%, rgba(32, 129, 159, 0.67) 30%, rgba(32, 129, 159, 1) 100%);
 }
 
@@ -75,7 +90,6 @@ body{
 .reservas{
     width: 95%;
     height: 160px;    
-    /* transform: translateY(30px); */
     background: rgba(255, 255, 255, 1);
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.16);
     border-radius: 25px;
@@ -129,7 +143,7 @@ input, select{
 }
 
 .fondo-amarillo{
-    background:#FBE40F;
+    background:var(--color-amarillo);
     width: 100%;
 }
 .img-planes{
@@ -158,7 +172,7 @@ input, select{
 }
 .texto-planes{
     font-size: 30px;
-    color: #10596F;
+    color: var(--color-azul);
     font-family: 'Roboto', sans-serif;
     margin-left: 13px;
     margin-top: 20px;
@@ -166,15 +180,15 @@ input, select{
 .hr{
     height: 2px;
     width: 152px;
-    color: #10596F;
-    background-color: #10596F;
+    color: var(--color-azul);
+    background-color: var(--color-azul);
     position: relative;
 }
 .circulo{
     width: 15px;
     height: 15px;
 	border-radius: 50%;
-	background: #10596F;
+	background: var(--color-azul);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -200,7 +214,7 @@ input, select{
 .text-reserva-two{
     text-align: center;
     font-size: 60px;
-    color: #FF9315;
+    color: var(--color-naranja);
     font-family: 'Roboto', sans-serif;
 }
 .texto-gris{
@@ -219,7 +233,7 @@ input, select{
     width: fit-content;
     margin: 0 auto;
     font-size: 60px;
-    color: #FF9315;
+    color:var(--color-naranja);
     font-family: 'Roboto', sans-serif;
     padding: 0 30px;
 }
@@ -229,10 +243,10 @@ input, select{
 }
 /* sección guia */
 .guia{
-background: #FF9315;
+background:var(--color-naranja);
 }
 .borde-azul{
-    background: #10596F;
+    background: var(--color-azul);
     border: 1px solid #5C5C5C ;
     height: 45px;
 }
@@ -240,14 +254,14 @@ background: #FF9315;
 /* Sección elige tour */
 .texto-azul{
     font-size: 40px;
-    color: #10596F;
+    color: var(--color-azul);
     font-family: 'Roboto', sans-serif;
 }
 hr{
     height: 2px;
     width: 152px;
-    color: #10596F;
-    background-color: #10596F;
+    color: var(--color-azul);
+    background-color: var(--color-azul);
     position: relative;
 }
 .container-expand{
@@ -262,7 +276,7 @@ hr{
     width: 223px;
     height: 47px;
     color: white;
-    background: #FF9315;
+    background: var(--color-naranja);
     border-radius: 50px;
     border: 1px solid transparent;
     font-size: 25px;
@@ -273,8 +287,8 @@ hr{
  .hr-azul{
      height: 2px;
      width: 152px;
-     color: #10596F;
-     background-color: #10596F;
+     color: var(--color-azul);
+     background-color: var(--color-azul);
      position: relative;
      left: -42%;
     
@@ -472,11 +486,17 @@ align-self: center;
     .barra-nav{
     width: 100vw;
     }
+    .text-color{
+      color: var(--color-naranja) !important;
+    }
         .container-copyright{
             width: 80%;
             height: fit-content;
         }
         .container-footer{
             justify-content: flex-end;
+        }
+        .text-color{
+            color: #363636;
         }
 }
