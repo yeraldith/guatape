@@ -41,7 +41,7 @@ body {
 }
 
 .header-informacion {
-    width: 102%;
+    width: 100%;
     box-sizing: border-box;
     z-index: 3;
     position: fixed;
@@ -72,6 +72,7 @@ body {
 .barra-nav {
     height: auto;
     width: 100%;
+    max-width: 100%;
     position: fixed;
     top: 27px;
     z-index: 3;
@@ -87,12 +88,6 @@ body {
 
 .text-color {
     color: white !important;
-}
-
-.nav-color {
-    height: auto;
-    z-index: 3;
-    background: transparent linear-gradient(90deg, rgba(32, 129, 159, 0) 0%, rgba(32, 129, 159, 0.67) 30%, rgba(32, 129, 159, 1) 100%);
 }
 
 .listado-nav {
@@ -145,6 +140,7 @@ label, option {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    width: fit-content;
 }
 
 input, select {
@@ -181,7 +177,34 @@ input, select {
 }
 
 /* Sección reservas */
+.btn-reservar-dos{
+    background: rgba(255, 147, 21, 1);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 25px;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 47px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 
+}
+.reservas-dos {
+    width: 100%;
+    height: 160px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    z-index: 1;
+}
+.row-reservas{
+    height: 363px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .normas {
     width: 166px;
     height: 166px;
@@ -190,7 +213,7 @@ input, select {
 
 .card-tour {
     position: relative;
-    top: -73px;
+    top: -50px;
     background: #FFFFFF;
     box-shadow: 1px 1px 20px #00000029;
     border-radius: 25px;
@@ -230,19 +253,20 @@ input, select {
 }
 
 .card-reserva {
-    width: fit-content;
+    width: 100%;
+    height: 323px;
     background-color: #20819F;
-    height: fit-content;
     box-shadow: 1px 1px 20px #00000029;
     border-radius: 25px;
     padding: 10px 10px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     flex-flow: column;
 }
 
 .text-reserva-one {
-    font-size: 72px;
+    font-size: 62px;
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -250,7 +274,7 @@ input, select {
 
 .text-reserva-two {
     text-align: center;
-    font-size: 60px;
+    font-size: 55px;
     color: var(--color-naranja);
     font-family: 'Roboto', sans-serif;
 }
@@ -266,21 +290,25 @@ input, select {
     background: #FFFFFF 0% 0%;
     border: 1px solid #707070;
     border-radius: 45px;
-    height: 89px;
+    height: 65px;
     width: fit-content;
     margin: 0 auto;
-    font-size: 60px;
+    font-size: 45px;
     color: var(--color-naranja);
     font-family: 'Roboto', sans-serif;
     padding: 0 30px;
 }
 
 .img-reservas {
-    width: 110%;
+    width: 100%;
     height: 363px;
 }
 
 /* sección guia */
+.img-guia{
+    width:100%;
+    height: 290px;
+}
 
 .guia {
     background: var(--color-naranja);
@@ -293,6 +321,29 @@ input, select {
 }
 
 /* Sección elige tour */
+.text-blanco-tour{
+    color: white;
+    position: absolute;
+    bottom: 8%;
+    left: 23%;
+}
+.btn-azul {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 34px;
+    color: white;
+    background-color: var(--color-azul);
+    font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    margin: 15px auto;
+    position: absolute;
+    bottom: 13%;
+    left: 23%;
+}
 
 .texto-azul {
     font-size: 40px;
@@ -313,7 +364,20 @@ hr {
 }
 
 /* Sección experiencia */
-
+.img-experiencia{
+    width: 100%;
+    height: 393px;
+}
+.container-experiencia{
+height: 800px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.img-experiencia-dos{
+    width: 100%;
+    height: 800px;
+}
 .btn-naranja {
     display: flex;
     justify-content: center;
@@ -365,20 +429,23 @@ hr {
 }
 
 /* Seccion blog */
-.vr-azul { 
+
+.vr-azul {
     background-color: var(--color-azul);
     width: 6px;
     height: 40px;
     margin-top: -12px;
     margin-left: -20px;
-} 
-.vr-naranja { 
+}
+
+.vr-naranja {
     width: 6px;
     background-color: var(--color-naranja);
     height: 40px;
     margin-top: -12px;
     margin-left: -20px;
-} 
+}
+
 .img-blog {
     width: 100%;
     height: 100%;
@@ -469,10 +536,19 @@ hr {
 }
 
 @media (max-width: 768px) {
+    .img-planes {
+       margin-top: 15px;
+       width: 100%;
+       height: 400px;
+    }    
+    .btn-naranja {
+        width: 193px;
+        height: 37px;
+        font-size: 20px;
+    }
     .barra-nav {
         position: fixed;
         top: 44px;
-        width: 100vw;
     }
     .logo {
         top: 38px;
@@ -493,7 +569,7 @@ hr {
     .footer-uno {
         align-self: center;
     }
-    .text-informacion{
+    .text-informacion {
         font-size: 12px;
     }
     .icons {
@@ -501,13 +577,13 @@ hr {
         height: 22px;
         cursor: pointer;
     }
-    .container-copyright{
+    .container-copyright {
         width: 100%;
     }
 }
 
 @media (max-width: 992px) {
-  .text-reserva-one , .text-reserva-two{
+    .text-reserva-one, .text-reserva-two {
         font-size: 40px;
     }
     .texto-blanco, .texto-banner {
@@ -523,7 +599,8 @@ hr {
         background: rgba(255, 255, 255, 1);
         box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.16);
         border-radius: 25px;
-        margin: 109px auto;        z-index: 1;
+        margin: 125px auto;
+        z-index: 1;
     }
     .btn-reservar {
         height: 40px;
@@ -531,11 +608,7 @@ hr {
         width: 300px;
     }
     form {
-        padding: 20px 0px;
-    }
-    .header-informacion {
-        box-sizing: border-box;
-        top: 0px
+        padding: 20px 10px;
     }
     .texto-azul {
         font-size: 25px;
@@ -543,7 +616,6 @@ hr {
     .btn-blanco {
         font-size: 20px;
         height: 50px;
-    
     }
     .texto-banner {
         top: 20%;
@@ -560,30 +632,53 @@ hr {
     .container-footer {
         justify-content: flex-end;
     }
-    
-.footer-uno {
-    align-self: flex-end;
-}
-
-.footer-dos {
-    align-self:flex-end;
-}
-
-.footer-tres {
-    align-self: flex-end;
-}
-
-.footer-cuatro {
-    align-self: flex-end;
-}
-.logo-footer {
-    width: 180px;
-    height: 130px;
-    margin-top: 156px;
-}
-.footer-row {
-    display: flex;
-    height: 400px;
-}
-    
+    .footer-uno {
+        align-self: flex-end;
+    }
+    .footer-dos {
+        align-self: flex-end;
+    }
+    .footer-tres {
+        align-self: flex-end;
+    }
+    .footer-cuatro {
+        align-self: flex-end;
+    }
+    .logo-footer {
+        width: 180px;
+        height: 130px;
+        margin-top: 156px;
+    }
+    .footer-row {
+        display: flex;
+        height: 400px;
+    }
+    .btn-azul {
+        bottom: 10%;
+        left: 19%;
+    }
+    .row-reservas{
+        height:763px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-experiencia{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .img-experiencia-dos{
+        width: 100%;
+        height: auto;
+    }
+    .reservas-dos {
+        display: none;
+    }
+    .text-blanco-tour{
+        bottom: 5%;
+        left: 23%;
+    }
+        
 }
